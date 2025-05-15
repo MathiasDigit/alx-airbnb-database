@@ -29,7 +29,7 @@ LEFT JOIN payments ON bookings.booking_id = payments.booking_id;
 
 -- Optimized query to fetch confirmed bookings with related user, property, and payment details,
 -- applying filters and limits to reduce execution time
-
+EXPLAIN ANALYZE
 SELECT
   bookings.booking_id,
   bookings.start_date,
