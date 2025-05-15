@@ -1,4 +1,5 @@
 -- Indexes for users table
+EXPLAIN ANALYZE
 CREATE INDEX idx_users_email ON users(email);
 CREATE INDEX idx_users_name ON users(first_name);
 -- Indexes for bookings table
