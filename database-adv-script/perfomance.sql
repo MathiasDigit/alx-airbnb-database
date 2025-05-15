@@ -57,7 +57,8 @@ INNER JOIN users ON bookings.user_id = users.user_id
 INNER JOIN properties ON bookings.property_id = properties.property_id
 LEFT JOIN payments ON bookings.booking_id = payments.booking_id
 
-WHERE bookings.status = 'confirmed'  -- Filter only confirmed bookings early to reduce rows processed
+WHERE bookings.status = 'confirmed', -- Filter only confirmed bookings early to reduce rows processed
+
 
 ORDER BY bookings.start_date DESC
 
