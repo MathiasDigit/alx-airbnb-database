@@ -1,6 +1,7 @@
 -- Create the database
 CREATE DATABASE airbnb;
-SET SEARCH_PATH = "I_AIR";
+\c airbnb;  -- Connect to the database (only in psql)
+
 -- Table: users
 CREATE TABLE users (
 user_id UUID PRIMARY KEY,
